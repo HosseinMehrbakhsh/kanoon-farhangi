@@ -8,6 +8,8 @@ body {
   font-family: Vazirmatn, sans-serif;
 }
 
+
+/*------------- main nav --------------- */
 .main_nav {
   color: var(--secondary-color);
   background-color: var(--primary-color);
@@ -33,19 +35,27 @@ body {
 }
 
 .search_input {
+  background-color: hsl(219, 89%, 25%);
   border: 1px solid var(--primary-color);
   height: 35px;
   width: 160px;
   border-radius: 15px;
   padding: 10px;
+  color: var(--secondary-color);
 }
 
 .search_input:focus {
-  outline: 1px solid gray;
+  outline: 1px solid var(--primary-color);
+}
+
+.search_input::placeholder {
+  color: var(--secondary-color);
+  opacity: 0.65;
 }
 
 .search_btn {
-  background-color: white;
+  background-color: hsl(219, 89%, 25%);
+  color: var(--secondary-color);
   border-color: var(--primary-color);
   border-right: transparent;
   border-radius: 15px;
@@ -67,6 +77,55 @@ body {
 }
 
 
+/*----------------- hero ----------------- */
+.hero {
+  height: 86vh;
+  background-image: radial-gradient(circle,
+      rgba(5, 34, 87, 0.75) 25%,
+      rgb(5, 34, 87, 0.1) 100%,
+      transparent 80%), url("assets/imgs/farhangi-hero.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero_title_box {
+  line-height: 65px;
+}
+
+.hero_title {
+  font-size: 48px;
+  font-weight: 600;
+  color: white;
+}
+
+.hero p {
+  color: hsl(213, 98%, 87%);
+  font-size: 20px;
+}
+
+.home_btn {
+  border: 0;
+  background: color-mix(in srgb,
+      var(--primary-color2) 60%,
+      transparent);
+  color: var(--secondary-color);
+  border-radius: 18px;
+  padding: 5px 25px;
+  backdrop-filter: blur(2px);
+  transition-duration: 0.3s;
+  font-size: 20px;
+}
+
+.home_btn:hover {
+  background-color: var(--primary-color);
+  background: color-mix(in srgb,
+      var(--primary-color) 60%,
+      transparent);
+  backdrop-filter: blur(3px)
+}
+
+
 
 @media (max-width: 1199.98px) {
   .search_input {
@@ -82,6 +141,8 @@ body {
 }
 
 @media (max-width: 767.98px) {
+
+  /*------ main nav -------- */
   .search_input {
     height: 35px;
     width: 150px;
@@ -95,5 +156,31 @@ body {
 
   .nav_title {
     font-size: 18px;
+  }
+
+  /*-------- hero ------- */
+  .hero {
+    height: 88vh;
+    background-image: radial-gradient(circle at center top,
+        rgba(5, 34, 87, 0.8) 25%,
+        rgb(5, 34, 87, 0.05) 100%,
+        transparent 80%), url("assets/imgs/farhangi-hero.webp");
+    background-position: right;
+  }
+
+  .hero_title_box {
+    line-height: 55px;
+  }
+
+  .hero_title {
+    font-size: 35px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .home_btn {
+    font-size: 20px;
   }
 }

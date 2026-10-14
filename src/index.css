@@ -1,5 +1,15 @@
+@font-face {
+  font-family: "Vazirmatn";
+  src: url("../public/fonts/Vazirmatn[wght].woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 :root {
   --primary-color: #052257;
+  --text-primary: hsl(219, 89%, 30%);
   --secondary-color: hsl(213, 98%, 95%);
   --primary-color2: hsl(213, 100%, 60%);
 }
@@ -21,6 +31,7 @@ body {
 
 .nav_title {
   font-size: 20px;
+  font-weight: 500;
 }
 
 .nav_link_items a {
@@ -101,7 +112,7 @@ body {
 
 .hero p {
   color: hsl(213, 98%, 87%);
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .home_btn {
@@ -118,14 +129,76 @@ body {
 }
 
 .home_btn:hover {
-  background-color: var(--primary-color);
-  background: color-mix(in srgb,
+  background-color: var(--primary-color2);
+  /* background: color-mix(in srgb,
       var(--primary-color) 60%,
       transparent);
-  backdrop-filter: blur(3px)
+  backdrop-filter: blur(3px) */
 }
 
 
+/*------------ clubs -------------  */
+
+.clubs_title {
+  font-size: 28px;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.clubs_title_link {
+  text-decoration: none;
+  color: var(--text-primary);
+  transition-duration: 0.3s;
+}
+
+.clubs_title_link:hover {
+  color: var(--primary-color2);
+}
+
+.club_item {
+  border: 2px solid rgb(10, 65, 169, 0.1);
+  transition-duration: 0.3s;
+  text-decoration: none;
+}
+
+.club_img_container {
+  width: 100%;
+}
+
+.club_img{
+  width: 100%;
+}
+
+.club_item:hover {
+  border: 2px solid rgb(10, 65, 169, 0.3)
+}
+
+.club_item_title {
+  color: var(--text-primary);
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.club_item p {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.club_item_btn {
+  background-color: var(--secondary-color);
+  border: 2px solid rgb(10, 65, 169, 0.1);
+  ;
+  padding: 3px 20px;
+  text-decoration: none;
+  color: var(--text-primary);
+  transition-duration: 0.3s;
+}
+
+.club_item_btn:hover {
+  background-color: var(--primary-color2);
+  color: var(--secondary-color);
+}
 
 @media (max-width: 1199.98px) {
   .search_input {
@@ -143,24 +216,21 @@ body {
 @media (max-width: 767.98px) {
 
   /*------ main nav -------- */
-  .search_input {
-    height: 35px;
-    width: 150px;
-    border-radius: 15px;
-    padding: 10px;
-  }
-
   .search_btn {
     font-size: 14px;
   }
 
   .nav_title {
-    font-size: 18px;
+    font-size: 16px;
+  }
+
+  .logo_img {
+    width: 50px;
   }
 
   /*-------- hero ------- */
   .hero {
-    height: 88vh;
+    height: 92vh;
     background-image: radial-gradient(circle at center top,
         rgba(5, 34, 87, 0.8) 25%,
         rgb(5, 34, 87, 0.05) 100%,
@@ -169,18 +239,50 @@ body {
   }
 
   .hero_title_box {
-    line-height: 55px;
+    line-height: 45px;
   }
 
   .hero_title {
-    font-size: 35px;
+    font-size: 25px;
   }
 
   .hero p {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .home_btn {
     font-size: 20px;
+  }
+
+
+  /*---------- clubs ---------- */
+  .clubs_title {
+    font-size: 22px;
+
+  }
+
+  .clubs_title_link {
+    font-size: 12px;
+  }
+
+  .club_item_title {
+    font-size: 16px;
+  }
+
+  .club_item p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .club_img_container {
+    width: 50%;
+    height: 150px;
+  }
+  .club_img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
   }
 }

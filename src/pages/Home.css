@@ -1,4 +1,3 @@
-
 /*----------------- hero ----------------- */
 .hero {
     height: 86vh;
@@ -116,7 +115,49 @@
 }
 
 
+/*--------- cta -------- */
+.cta {
+    background-image: linear-gradient(rgba(5, 34, 87, 0.8)), url(../assets/imgs/farhangi-cta.webp);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--secondary-color);
+}
 
+.cta_title {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.cta p {
+    color: hsl(213, 98%, 87%);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+
+
+.cta_btn {
+    text-decoration: none;
+    background: color-mix(in srgb,
+            var(--primary-color2) 60%,
+            transparent);
+    color: var(--secondary-color);
+    border-radius: 18px;
+    padding: 10px 25px;
+    backdrop-filter: blur(2px);
+    transition-duration: 0.3s;
+    font-size: 14px;
+}
+
+.cta_btn:hover {
+    background-color: var(--primary-color2);
+}
+
+.stat_col {
+    border-left: 2px solid rgba(189, 219, 254, 0.15);
+}
 
 @media (max-width: 767.98px) {
 
@@ -148,7 +189,7 @@
 
 
     /*---------- clubs & last activities ---------- */
-    .about_clubs p{
+    .about_clubs p {
         font-size: 12px;
     }
 
@@ -183,5 +224,17 @@
         width: 100%;
         object-fit: cover;
         object-position: center;
+    }
+
+    .cta {
+        background-image: linear-gradient(rgba(5, 34, 87, 0.8)), url(../assets/imgs/farhangi-cta.webp);
+        background-position: left bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: var(--secondary-color);
+    }
+
+    .stat_title{
+        font-size: 14px;
     }
 }

@@ -2,6 +2,7 @@ import './Home.css'
 import data from "../data/clubs-data"
 import Club from "../components/club"
 import Activity from "../components/activity";
+import peopleIcon from "../assets/imgs/people.webp"
 
 
 export default function Home() {
@@ -86,6 +87,51 @@ export default function Home() {
 
                             {activityArr}
 
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className="cta py-4 mt-3">
+                <div className="container">
+                    <div className="row gy-5">
+                        <div className="col-10 col-sm-8 col-md-4">
+                            <div className="ps-2 ps-md-5 d-flex flex-column justify-content-center align-items-start">
+                                <span className="cta_title">با ما همراه باشید</span>
+                                <p className="col-9 col-md-12 col-lg-10 col-xl-8 col-xxl-7 mb-2 py-2">کانون‌های فرهنگی، برای رشد استعدادها و تقویت هویت فرهنگی</p>
+                                <a href="" className="cta_btn d-flex align-items-center gap-2">
+                                    <span>تماس با ما</span>
+                                    <i className="bi bi-arrow-left-short d-flex align-items-center"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div className="col-12 col-md-8 ">
+                            <div className="row h-100 d-flex justify-content-end">
+                                <div className="col-4 stat_col">
+                                    <div className="d-flex flex-column justify-content-center align-items-center h-100">
+                                        <img src={peopleIcon} alt="clubs icon" width="40px" />
+                                        <span className="fs-3 py-1">12</span>
+                                        <span className="stat_title">کانون فرهنگی</span>
+                                    </div>
+                                </div>
+
+                                <div className="col-4 stat_col">
+                                    <div className="d-flex flex-column justify-content-center align-items-center h-100">
+                                        <img src={peopleIcon} alt="clubs icon" width="40px" />
+                                        <span className="fs-3 py-1">50</span>
+                                        <span className="stat_title">برنامه و فعالیت</span>
+                                    </div>
+                                </div>
+
+                                <div className="col-4">
+                                    <div className="d-flex flex-column justify-content-center align-items-center h-100">
+                                        <img src={peopleIcon} alt="clubs icon" width="40px" />
+                                        <span className="fs-3 py-1">60</span>
+                                        <span className="stat_title">عضو فعال</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

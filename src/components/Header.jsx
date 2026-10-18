@@ -4,7 +4,7 @@ export default function Header() {
             <nav className="main_nav">
                 <div className="container-fluid">
                     <div className="row">
-                        <div className="col-10 col-md-7 col-lg-8 col-xl-3 pe-xl-0 pe-auto">
+                        <div className="col-10 col-md-7 col-lg-8 col-xl-4 pe-xl-0 pe-auto">
                             <div className="d-flex align-items-center gap-1 gap-sm-3">
                                 <a href="#" className=" d-xl-none menu_icon">
                                     <i className="bi bi-list fs-4"></i>
@@ -18,7 +18,7 @@ export default function Header() {
                             </div>
                         </div>
 
-                        <div className="col-6 d-none d-xl-block">
+                        <div className="col-5 d-none d-xl-block">
                             <ul className="nav_link_items list-unstyled d-flex gap-5 align-items-center justify-content-center m-0 h-100">
                                 <li>
                                     <a href="#">خانه</a>
@@ -26,10 +26,6 @@ export default function Header() {
 
                                 <li>
                                     <a href="#">کانون‌ها</a>
-                                </li>
-
-                                <li>
-                                    <a href="#">فعالیت‌ها</a>
                                 </li>
 
                                 <li>

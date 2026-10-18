@@ -122,6 +122,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     color: var(--secondary-color);
+    border-bottom: 2px solid rgba(5, 34, 87, 0.9);
 }
 
 .cta_title {

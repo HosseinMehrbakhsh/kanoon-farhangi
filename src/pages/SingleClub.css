@@ -1,0 +1,32 @@
+
+.single_club_btn {
+    text-decoration: none;
+    border: 0;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 18px;
+    padding: 5px 15px;
+    backdrop-filter: blur(2px);
+    transition-duration: 0.3s;
+    font-size: 16px;
+}
+
+.single_club_btn:hover {
+    background-color: var(--primary-color2);
+}
+
+.club_stat_col {
+    border-left: 2px solid var(--secondary-color);
+}
+
+.club_stat_icon_container{
+    background-color: var(--secondary-color);
+    padding: 12px;
+}
+
+
+@media (max-width: 575.98px) {
+    .club_head p{
+        font-size: 13px;
+    }
+}

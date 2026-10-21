@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 export default function Footer() {
     return (
         <footer className="pt-4 pb-3 position-relative">
@@ -24,10 +26,10 @@ export default function Footer() {
                                         <span className="d-block pb-2 fw-semibold text_2">دسترسی سریع</span>
                                         <ul className="list-unstyled small m-0">
                                             <li className="py-1">
-                                                <a href="index.html" className="footer_link_item">خانه</a>
+                                                <Link to="/" className="footer_link_item">خانه</Link>
                                             </li>
                                             <li className="py-1">
-                                                <a href="products.html" className="footer_link_item">کانون‌ها</a>
+                                                <Link to="/clubs" className="footer_link_item">کانون‌ها</Link>
                                             </li>
                                             <li className="py-1">
                                                 <a href="#about_us" className="footer_link_item">گالری</a>
@@ -46,16 +48,16 @@ export default function Footer() {
                                         <span className="d-block pb-2 fw-semibold text_2">تماس با ما</span>
                                         <ul className="list-unstyled small">
                                             <li className="py-1 footer_contact">
-                                                <i class="bi bi-geo-alt-fill"></i>
+                                                <i className="bi bi-geo-alt-fill"></i>
                                                 <span href="#">قم، دانشگاه آزاد اسلامی واحد پردیسان</span>
                                             </li>
                                             <li className="py-1 footer_contact">
-                                                <i class="bi bi-telephone-fill"></i>
+                                                <i className="bi bi-telephone-fill"></i>
                                                 <span href="#" className="ltr">025 32333444</span>
                                             </li>
                                             <li className="py-1 footer_contact">
-                                                <i class="bi bi-envelope-fill"></i>
-                                                <span href="#" className="ltr">test@fake.com</span>
+                                                <i className="bi bi-envelope-fill"></i>
+                                                <span className="ltr">test@fake.com</span>
                                             </li>
                                         </ul>
                                     </div>

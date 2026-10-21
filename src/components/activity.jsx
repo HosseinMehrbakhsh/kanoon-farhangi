@@ -13,7 +13,7 @@ export default function Activity(props) {
                     </div>
                     <span className="card_item_title pt-1">{props.title}</span>
                     <div className="small text-secondary py-2 d-flex gap-2 align-items-center">
-                        <i class="bi bi-calendar4-event"></i>
+                        <i className="bi bi-calendar4-event"></i>
                         <span>{props.date}</span>
                     </div>
                 </div>

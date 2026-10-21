@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 export default function Header() {
     return (
         <header>
@@ -21,11 +22,11 @@ export default function Header() {
                         <div className="col-5 d-none d-xl-block">
                             <ul className="nav_link_items list-unstyled d-flex gap-5 align-items-center justify-content-center m-0 h-100">
                                 <li>
-                                    <a href="#">خانه</a>
+                                    <Link to="/">خانه</Link>
                                 </li>
 
                                 <li>
-                                    <a href="#">کانون‌ها</a>
+                                    <Link to="/clubs">کانون‌ها</Link>
                                 </li>
 
                                 <li>

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './Home.css'
 import data from "../data/clubs-data"
 import Club from "../components/club"
@@ -41,10 +42,10 @@ export default function Home() {
                             <span className="hero_title">دانشگاه آزاد اسلامی واحد قم</span>
                         </div>
                         <p className="col-11 col-sm-9 col-md-5 col-xl-4 text-center py-4">بستری برای فعالیت، خلاقیت و مشارکت دانشجویان در عرصه‌های فرهنگی، هنری، اجتماعی و علمی</p>
-                        <button className="home_btn d-flex align-items-center gap-1">
+                        <Link to="/clubs" className="home_btn d-flex align-items-center gap-1">
                             <span>مشاهده کانون‌ها</span>
                             <i className="bi bi-arrow-left-short"></i>
-                        </button>
+                        </Link>
                     </div>
                 </div>
             </section>
@@ -63,10 +64,10 @@ export default function Home() {
                     <div className="clubs_container">
                         <div className="d-flex justify-content-between align-items-center py-3 py-md-4">
                             <span className="repeated_title">کانون‌های فرهنگی</span>
-                            <a href="#" className="clubs_title_link d-flex align-items-center gap-1">
+                            <Link to="/clubs" className="clubs_title_link d-flex align-items-center gap-1">
                                 <span>مشاهده همه کانون‌ها</span>
                                 <i className="bi bi-arrow-left-short d-flex align-items-baseline"></i>
-                            </a>
+                            </Link>
                         </div>
                         <div className="row g-3">
 
@@ -110,16 +111,16 @@ export default function Home() {
                             <div className="row h-100 d-flex justify-content-end">
                                 <div className="col-4 stat_col">
                                     <div className="d-flex flex-column justify-content-center align-items-center h-100">
-                                        <img src={peopleIcon} alt="clubs icon" width="40px" />
-                                        <span className="fs-3 py-1">12</span>
+                                        <i className="bi bi-book cta_icon d-flex align-items-center"></i>
+                                        <span className="fs-3 pt-2">12</span>
                                         <span className="stat_title">کانون فرهنگی</span>
                                     </div>
                                 </div>
 
                                 <div className="col-4 stat_col">
                                     <div className="d-flex flex-column justify-content-center align-items-center h-100">
-                                        <img src={peopleIcon} alt="clubs icon" width="40px" />
-                                        <span className="fs-3 py-1">50</span>
+                                        <i className="bi bi-calendar4-week cta_icon d-flex align-items-center"></i>
+                                        <span className="fs-3 pt-2">50</span>
                                         <span className="stat_title">برنامه و فعالیت</span>
                                     </div>
                                 </div>

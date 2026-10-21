@@ -26,6 +26,7 @@
 }
 
 .home_btn {
+    text-decoration: none;
     border: 0;
     background: color-mix(in srgb,
             var(--primary-color2) 60%,
@@ -154,6 +155,10 @@
 
 .cta_btn:hover {
     background-color: var(--primary-color2);
+}
+
+.cta_icon{
+    font-size: 30px;
 }
 
 .stat_col {

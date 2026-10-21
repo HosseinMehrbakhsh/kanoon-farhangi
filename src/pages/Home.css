@@ -1,0 +1,246 @@
+/*----------------- hero ----------------- */
+.hero {
+    height: 86vh;
+    background-image: radial-gradient(circle,
+            rgba(5, 34, 87, 0.75) 25%,
+            rgb(5, 34, 87, 0.1) 100%,
+            transparent 80%), url("../assets/imgs/farhangi-hero.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero_title_box {
+    line-height: 65px;
+}
+
+.hero_title {
+    font-size: 48px;
+    font-weight: 600;
+    color: white;
+}
+
+.hero p {
+    color: hsl(213, 98%, 87%);
+    font-size: 18px;
+}
+
+.home_btn {
+    text-decoration: none;
+    border: 0;
+    background: color-mix(in srgb,
+            var(--primary-color2) 60%,
+            transparent);
+    color: var(--secondary-color);
+    border-radius: 18px;
+    padding: 5px 25px;
+    backdrop-filter: blur(2px);
+    transition-duration: 0.3s;
+    font-size: 20px;
+}
+
+.home_btn:hover {
+    background-color: var(--primary-color2);
+}
+
+
+/*------------ clubs & last activities -------------  */
+
+.repeated_title {
+    font-size: 28px;
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.clubs_title_link {
+    text-decoration: none;
+    color: var(--text-primary);
+    transition-duration: 0.3s;
+}
+
+.clubs_title_link:hover {
+    color: var(--primary-color2);
+}
+
+.card_item {
+    border: 2px solid rgb(10, 65, 169, 0.1);
+    transition-duration: 0.3s;
+    text-decoration: none;
+}
+
+.card_img_container {
+    width: 100%;
+}
+
+.card_img {
+    width: 100%;
+}
+
+.card_item:hover {
+    border: 2px solid rgb(10, 65, 169, 0.3)
+}
+
+.card_item_title {
+    color: var(--text-primary);
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.card_item p {
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.club_item_btn {
+    background-color: var(--secondary-color);
+    border: 2px solid rgb(10, 65, 169, 0.1);
+    padding: 3px 20px;
+    text-decoration: none;
+    color: var(--text-primary);
+    transition-duration: 0.3s;
+}
+
+.club_item_btn:hover {
+    background-color: var(--primary-color2);
+    color: var(--secondary-color);
+}
+
+.activity_club_title {
+    font-size: 11px;
+    color: var(--text-primary);
+    background-color: var(--secondary-color);
+    padding: 2px 5px;
+    font-weight: 500;
+    opacity: 0.9;
+}
+
+
+/*--------- cta -------- */
+.cta {
+    background-image: linear-gradient(rgba(5, 34, 87, 0.8)), url(../assets/imgs/farhangi-cta.webp);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--secondary-color);
+    border-bottom: 2px solid rgba(5, 34, 87, 0.9);
+}
+
+.cta_title {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.cta p {
+    color: hsl(213, 98%, 87%);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+
+
+.cta_btn {
+    text-decoration: none;
+    background: color-mix(in srgb,
+            var(--primary-color2) 60%,
+            transparent);
+    color: var(--secondary-color);
+    border-radius: 18px;
+    padding: 10px 25px;
+    backdrop-filter: blur(2px);
+    transition-duration: 0.3s;
+    font-size: 14px;
+}
+
+.cta_btn:hover {
+    background-color: var(--primary-color2);
+}
+
+.cta_icon{
+    font-size: 30px;
+}
+
+.stat_col {
+    border-left: 2px solid rgba(189, 219, 254, 0.15);
+}
+
+@media (max-width: 767.98px) {
+
+    /*-------- hero ------- */
+    .hero {
+        height: 92vh;
+        background-image: radial-gradient(circle at center top,
+                rgba(5, 34, 87, 0.8) 25%,
+                rgb(5, 34, 87, 0.05) 100%,
+                transparent 80%), url("../assets/imgs/farhangi-hero.webp");
+        background-position: right;
+    }
+
+    .hero_title_box {
+        line-height: 45px;
+    }
+
+    .hero_title {
+        font-size: 25px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .home_btn {
+        font-size: 20px;
+    }
+
+
+    /*---------- clubs & last activities ---------- */
+    .about_clubs p {
+        font-size: 12px;
+    }
+
+    .repeated_title {
+        font-size: 22px;
+
+    }
+
+    .clubs_title_link {
+        font-size: 12px;
+    }
+
+    .card_item_title {
+        font-size: 16px;
+    }
+
+    .card_item p {
+        font-size: 14px;
+    }
+
+}
+
+
+@media (max-width: 575.98px) {
+    .card_img_container {
+        width: 50%;
+        height: 150px;
+    }
+
+    .card_img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .cta {
+        background-image: linear-gradient(rgba(5, 34, 87, 0.8)), url(../assets/imgs/farhangi-cta.webp);
+        background-position: left bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: var(--secondary-color);
+    }
+
+    .stat_title{
+        font-size: 14px;
+    }
+}

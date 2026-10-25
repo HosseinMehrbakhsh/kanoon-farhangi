@@ -12,7 +12,7 @@ export default function Club(props) {
                     <span className="card_item_title">{props.title}</span>
                     <p className="col-10 col-sm-12 col-xl-9 col-xxl-8 py-2 text-center text-secondary m-0">{props.miniAbout}</p>
                     <button className="club_item_btn rounded-3 d-flex align-items-center gap-2">مشاهده کانون
-                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left preview-icon"><path d="m12 19-7-7 7-7" /><path d="M19 12H5" /></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-arrow-left preview-icon"><path d="m12 19-7-7 7-7" /><path d="M19 12H5" /></svg>
                     </button>
                 </div>
             </Link>

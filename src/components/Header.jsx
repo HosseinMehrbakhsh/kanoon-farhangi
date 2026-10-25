@@ -8,7 +8,7 @@ export default function Header() {
                         <div className="col-10 col-md-7 col-lg-8 col-xl-4 pe-xl-0 pe-auto">
                             <div className="d-flex align-items-center gap-1 gap-sm-3">
                                 <a href="#" className=" d-xl-none menu_icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-text-align-justify preview-icon"><path d="M3 5h18"/><path d="M3 12h18"/><path d="M3 19h18"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-text-align-justify preview-icon"><path d="M3 5h18" /><path d="M3 12h18" /><path d="M3 19h18" /></svg>
                                 </a>
 
                                 <img src="./src/assets/imgs/farhangi-logo.webp" className="logo_img" alt="Azad univercity logo" width="70px" />
@@ -48,14 +48,14 @@ export default function Header() {
                             <form className="search_box input-group d-flex justify-content-center">
                                 <input type="search" className="search_input shadow" placeholder="جستجو.." />
                                 <button type="submit" className="btn search_btn shadow">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search preview-icon"><path d="m21 21-4.34-4.34" /><circle cx="11" cy="11" r="8" /></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-search preview-icon"><path d="m21 21-4.34-4.34" /><circle cx="11" cy="11" r="8" /></svg>
                                 </button>
                             </form>
                         </div>
 
                         <div className="col-2 d-md-none d-flex align-items-center justify-content-center">
                             <a href="#" className="menu_icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search preview-icon"><path d="m21 21-4.34-4.34" /><circle cx="11" cy="11" r="8" /></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-search preview-icon"><path d="m21 21-4.34-4.34" /><circle cx="11" cy="11" r="8" /></svg>
                             </a>
                         </div>
                     </div>

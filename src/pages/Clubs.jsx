@@ -1,12 +1,12 @@
 import "./Clubs.css"
 import ClabsData from "../data/clubs-data"
-import Club from "../components/club"
+import Club from "../components/Club"
 
 export default function Clubs() {
 
-    const clubsArr=ClabsData.map((ClubData)=>{
-        return(
-            <Club 
+    const clubsArr = ClabsData.map((ClubData) => {
+        return (
+            <Club
                 key={ClubData.id}
                 img={ClubData.mainImg}
                 title={ClubData.title}
@@ -14,7 +14,7 @@ export default function Clubs() {
             />
         )
     })
-    
+
 
     return (
         <main>
@@ -30,11 +30,11 @@ export default function Clubs() {
             <section className="pt-3 pt-md-4">
                 <div className="container">
                     <div className="d-flex justify-content-center">
-                        
+
                         <form className="clubs_search input-group d-flex justify-content-center">
                             <input type="search" className="col-10 col-lg-7 clubs_search_input p-2" placeholder="جستجو در کانون‌ها..." />
                             <button type="submit" className="clubs_search_btn p-2">
-                                <i className="bi bi-search"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search preview-icon"><path d="m21 21-4.34-4.34" /><circle cx="11" cy="11" r="8" /></svg>
                             </button>
                         </form>
                     </div>

@@ -13,7 +13,7 @@ export default function Activity(props) {
                     </div>
                     <span className="card_item_title pt-1">{props.title}</span>
                     <div className="small text-secondary py-2 d-flex gap-2 align-items-center">
-                        <i className="bi bi-calendar4-event"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-clock preview-icon"><path d="M16 14v2.2l1.6 1" /><path d="M16 2v3" /><path d="M21 7.338V5a2 2 0 00-2-2H5a2 2 0 00-2 2v14a2 2 0 002 2h2.338" /><path d="M3 9h5.859" /><path d="M8 2v3" /><circle cx="16" cy="16" r="6" /></svg>
                         <span>{props.date}</span>
                     </div>
                 </div>

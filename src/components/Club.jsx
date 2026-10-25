@@ -1,8 +1,10 @@
+import { Link } from "react-router-dom";
+
 export default function Club(props) {
 
     return (
         <div className="col-12 col-sm-6 col-lg-3 mx-auto">
-            <a href="#" className="card_item rounded-3 shadow-sm d-flex flex-sm-column align-items-center">
+            <Link to={`/SingleClub?id=${props.id}`} className="card_item rounded-3 shadow-sm d-flex flex-sm-column align-items-center">
                 <div className="card_img_container d-flex rounded-3 overflow-hidden">
                     <img src={props.img} className="card_img" alt="" />
                 </div>
@@ -10,10 +12,10 @@ export default function Club(props) {
                     <span className="card_item_title">{props.title}</span>
                     <p className="col-10 col-sm-12 col-xl-9 col-xxl-8 py-2 text-center text-secondary m-0">{props.miniAbout}</p>
                     <button className="club_item_btn rounded-3 d-flex align-items-center gap-2">مشاهده کانون
-                        <i className="bi bi-arrow-left-short"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left preview-icon"><path d="m12 19-7-7 7-7" /><path d="M19 12H5" /></svg>
                     </button>
                 </div>
-            </a>
+            </Link>
         </div>
     )
 }

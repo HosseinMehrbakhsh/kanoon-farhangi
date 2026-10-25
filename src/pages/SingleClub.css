@@ -20,6 +20,7 @@
     background-color: var(--secondary-color);
     height: 35px;
     width: 35px;
+    min-width: 35px;
     display: flex;
     align-items: center;
     justify-content: center;

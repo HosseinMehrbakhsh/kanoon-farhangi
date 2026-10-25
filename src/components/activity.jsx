@@ -1,8 +1,10 @@
+import { Link } from "react-router-dom"
+
 export default function Activity(props) {
 
     return (
         <div className="col-12 col-sm-6 col-lg-3 mx-auto">
-            <a href="#" className="card_item rounded-3 shadow-sm d-flex flex-sm-column align-items-center">
+            <Link to="/singleActivity" className="card_item rounded-3 shadow-sm d-flex flex-sm-column align-items-center">
                 <div className="card_img_container d-flex rounded-3 overflow-hidden">
                     <img src={props.img} className="card_img" alt="" />
                 </div>
@@ -17,7 +19,7 @@ export default function Activity(props) {
                         <span>{props.date}</span>
                     </div>
                 </div>
-            </a>
+            </Link>
         </div>
     )
 }

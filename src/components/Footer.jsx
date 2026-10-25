@@ -32,10 +32,10 @@ export default function Footer() {
                                                 <Link to="/clubs" className="footer_link_item">کانون‌ها</Link>
                                             </li>
                                             <li className="py-1">
-                                                <a href="#about_us" className="footer_link_item">گالری</a>
+                                                <Link to="/activities" className="footer_link_item">فعالیت‌ها</Link>
                                             </li>
                                             <li className="py-1">
-                                                <a href="#about_us" className="footer_link_item">درباره ما</a>
+                                                <a href="#about_us" className="footer_link_item">گالری</a>
                                             </li>
                                         </ul>
                                     </div>

@@ -1,0 +1,37 @@
+main {
+    color: hsl(219, 89%, 30%);
+}
+
+.club_activity_search_input::placeholder {
+    color: rgb(5, 34, 87, 0.6);
+}
+
+.club_activity_search_input {
+    border: 2px solid rgb(5, 34, 87, 0.1);
+    border-radius: 10px;
+    border-left: transparent;
+}
+
+.club_activity_search_input:focus {
+    color: hsl(219, 89%, 30%);
+    outline: 2px solid rgb(8, 56, 145, 0.2);
+}
+
+.club_activity_search_btn {
+    border: 2px solid rgb(5, 34, 87, 0.1);
+    border-radius: 10px;
+    border-right: transparent;
+    background-color: transparent;
+    transition-duration: 0.3s;
+    color: hsl(219, 89%, 30%);
+}
+
+.club_activity_search_btn:hover {
+    background-color: hsl(214, 100%, 95%);
+}
+
+@media (max-width: 575.98px) {
+    .club_activity_head p {
+        font-size: 13px;
+    }
+}

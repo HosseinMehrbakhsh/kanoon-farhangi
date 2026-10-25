@@ -1,4 +1,4 @@
-import "./Clubs.css"
+import "./Clubs-Activities.css"
 import ClabsData from "../data/clubs-data"
 import Club from "../components/Club"
 
@@ -18,7 +18,7 @@ export default function Clubs() {
 
     return (
         <main>
-            <section className="clubs_head py-3 py-md-4 shadow-sm">
+            <section className="club_activity_head py-3 py-md-4 shadow-sm">
                 <div className="container">
                     <div className="d-flex flex-column align-items-center">
                         <span className="fs-2">کانون‌های فرهنگی</span>
@@ -32,8 +32,8 @@ export default function Clubs() {
                     <div className="d-flex justify-content-center">
 
                         <form className="clubs_search input-group d-flex justify-content-center">
-                            <input type="search" className="col-10 col-lg-7 clubs_search_input p-2" placeholder="جستجو در کانون‌ها..." />
-                            <button type="submit" className="clubs_search_btn p-2">
+                            <input type="search" className="col-10 col-lg-7 club_activity_search_input p-2" placeholder="جستجو در کانون‌ها..." />
+                            <button type="submit" className="club_activity_search_btn p-2">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search preview-icon"><path d="m21 21-4.34-4.34" /><circle cx="11" cy="11" r="8" /></svg>
                             </button>
                         </form>

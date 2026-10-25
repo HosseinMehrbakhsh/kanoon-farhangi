@@ -30,7 +30,7 @@ export default function Header() {
                                 </li>
 
                                 <li>
-                                    <a href="#">فعالیت‌ها</a>
+                                    <Link to="/activities">فعالیت‌ها</Link>
                                 </li>
 
                                 <li>

@@ -10,8 +10,11 @@ export default function SingleClub() {
     const clubId = searchParams.get("id");
     const club = Data.find((club) => (clubId == club.id ? club : null));
 
-    const activitiesArr =club.activities.map(activity => (
+    const activitiesArr = club.activities.map(activity => (
         <Activity
+            key={club.id + "." + activity.id}
+            id={activity.id}
+            clubId={club.id}
             img={activity.mainImg}
             clubTitle={club.title}
             title={activity.title}
@@ -19,8 +22,11 @@ export default function SingleClub() {
         />
     ));
 
-    const gallaryArr=club.activities.map(activity=>(
-        <GalleryImg src={activity.imgs[0]} />
+    const gallaryArr = club.activities.map(activity => (
+        <GalleryImg
+            key={club.id + "." + activity.id}
+            src={activity.imgs[0]}
+        />
     ))
 
 
@@ -153,7 +159,7 @@ export default function SingleClub() {
                     </div>
 
                     <div className="row g-3 d-flex flex-nowrap overflow-x-auto">
-                        
+
                         {gallaryArr}
 
                     </div>

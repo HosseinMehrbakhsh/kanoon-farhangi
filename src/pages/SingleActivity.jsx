@@ -11,7 +11,11 @@ export default function SingleClub() {
     const clubId = searchParams.get("clubId");
     const activity = Data.find(club => club.id == clubId)?.activities.find(item => item.id == id)
 
-    const galleryArr=activity.imgs.map(img=>(<GalleryImg src={img} />));
+    let key=0;
+    const galleryArr = activity.imgs.map(img => {
+        key=key+1;
+        return <GalleryImg key={key} src={img} />
+    });
 
     return (
         <main>
@@ -106,7 +110,7 @@ export default function SingleClub() {
                     </div>
 
                     <div className="row g-3 d-flex flex-nowrap overflow-x-auto">
-                        
+
                         {galleryArr}
 
                     </div>
@@ -121,7 +125,7 @@ export default function SingleClub() {
 
                     <div className={`${styles.video_container} d-flex justify-content-center`}>
                         <div className={`${styles.h_iframe_aparat_embed_frame}`}>
-                            <span style={{display: "block",paddingTop: "57%"}}></span>
+                            <span style={{ display: "block", paddingTop: "57%" }}></span>
                             <iframe className="rounded-3" src={activity.video} allowFullScreen={true} webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
                         </div>
                     </div>

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import styles from "./Header.module.css"
+import logo from "../assets/imgs/farhangi-logo.webp"
 export default function Header() {
     return (
         <header>
@@ -12,7 +13,7 @@ export default function Header() {
                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-text-align-justify preview-icon"><path d="M3 5h18" /><path d="M3 12h18" /><path d="M3 19h18" /></svg>
                                 </a>
 
-                                <img src="./src/assets/imgs/farhangi-logo.webp" className={styles.logo_img} alt="Azad univercity logo" width="70px" />
+                                <img src={logo} className={styles.logo_img} alt="Azad univercity logo" width="70px" />
                                 <div className={`d-flex flex-column ${styles.nav_title}`}>
                                     <span>کانون‌های فرهنگی دانشجویان</span>
                                     <span>دانشگاه آزاد اسلامی واحد قم</span>

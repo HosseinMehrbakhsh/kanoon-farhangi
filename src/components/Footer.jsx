@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import styles from "./Footer.module.css"
+import logo from "../assets/imgs/farhangi-logo.webp"
 
 export default function Footer() {
     return (
@@ -10,7 +11,7 @@ export default function Footer() {
                         <div
                             className="col-12 d-flex justify-content-start justify-content-md-center">
                             <div className="ms-1 ms-lg-5 d-flex flex-column align-items-start align-items-md-center justify-content-center">
-                                <img src="./src/assets/imgs/farhangi-logo.webp" width="60px" alt="IAU logo" />
+                                <img src={logo} width="60px" alt="IAU logo" />
                                 <div className={`d-flex flex-column ${styles.footer_title}`}>
                                     <span>کانون‌های فرهنگی دانشجویان</span>
                                     <span>دانشگاه آزاد اسلامی واحد قم</span>
@@ -112,14 +113,6 @@ export default function Footer() {
                     <span className="col-12 col-sm-6 small fw-lighter order-1 order-sm-2 ltr">© 2026 Islamic Azad Univercity. All
                         rights reserved.</span>
                 </div>
-            </div>
-
-            <div className={`${styles.footer_background1} position-absolute end-0 top-0`}>
-                <img src="assets/imgs/footer_background.webp" width="150px" alt="" />
-            </div>
-
-            <div className={`${styles.footer_background2} position-absolute start-0 top-0`}>
-                <img src="assets/imgs/footer_background.webp" width="150px" alt="" />
             </div>
         </footer>
     )

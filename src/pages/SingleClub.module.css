@@ -15,13 +15,21 @@
     background-color: var(--primary-color2);
 }
 
-.club_stat_col {
-    border-left: 2px solid var(--secondary-color);
-}
 
 .club_stat_icon_container{
     background-color: var(--secondary-color);
-    padding: 12px;
+    height: 35px;
+    width: 35px;
+    min-width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 575.98px) {
+    .stat_title {
+        font-size: 14px;
+    }
 }
 
 

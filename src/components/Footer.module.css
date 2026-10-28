@@ -1,0 +1,69 @@
+.footer {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  overflow: hidden;
+  z-index: 0;
+}
+
+.footer_title {
+  font-size: 18x;
+}
+
+.footer_link_item {
+  text-decoration: none;
+  color: var(--secondary-color);
+  transition-duration: 0.3s;
+}
+
+.footer_link_item:hover {
+  color: var(--primary-color2);
+}
+
+.social_link_item {
+  font-size: 25px;
+  text-decoration: none;
+  color: var(--secondary-color);
+  transition-duration: 0.3s;
+  filter: opacity(0.85);
+}
+
+.social_link_item:hover {
+  color: var(--primary-color2);
+}
+
+.footer_icon {
+  display: flex;
+  align-items: center;
+}
+
+.footer_bottom {
+  border-top: 2px solid rgb(229, 241, 255, 0.08);
+}
+
+.footer_background1 {
+  filter: opacity(0.2);
+  z-index: -1;
+}
+
+.footer_background2 {
+  filter: opacity(0.2);
+  transform: rotate(180deg);
+  z-index: -1;
+}
+
+.footer_contact {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer_author {
+  color: white;
+  font-size: 13px;
+  font-weight: 200;
+  text-decoration: none;
+}
+
+.footer_author:hover {
+  color: var(--primary-color2);
+}

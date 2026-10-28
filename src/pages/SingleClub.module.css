@@ -26,6 +26,12 @@
     justify-content: center;
 }
 
+@media (max-width: 575.98px) {
+    .stat_title {
+        font-size: 14px;
+    }
+}
+
 
 @media (max-width: 575.98px) {
     .club_head p{

@@ -33,6 +33,12 @@
 }
 
 @media (max-width: 575.98px) {
+    .stat_title {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 575.98px) {
     .activity_head p{
         font-size: 13px;
     }

@@ -1,16 +1,17 @@
 import { Link } from "react-router-dom"
+import styles from "./Footer.module.css"
 
 export default function Footer() {
     return (
-        <footer className="pt-4 pb-3 position-relative">
+        <footer className={`${styles.footer} pt-4 pb-3 position-relative`}>
             <div className="container">
-                <div className="row footer_content d-flex justify-content-center g-4 g-md-5 g-md-0">
+                    <div className="row footer_content d-flex justify-content-center g-4 g-md-5 g-md-0">
                     <div className="col-7 col-sm-6 col-md-3 p-0">
                         <div
                             className="col-12 d-flex justify-content-start justify-content-md-center">
                             <div className="ms-1 ms-lg-5 d-flex flex-column align-items-start align-items-md-center justify-content-center">
                                 <img src="./src/assets/imgs/farhangi-logo.webp" width="60px" alt="IAU logo" />
-                                <div className="d-flex flex-column footer_title">
+                                <div className={`d-flex flex-column ${styles.footer_title}`}>
                                     <span>کانون‌های فرهنگی دانشجویان</span>
                                     <span>دانشگاه آزاد اسلامی واحد قم</span>
                                 </div>
@@ -26,16 +27,16 @@ export default function Footer() {
                                         <span className="d-block pb-2 fw-semibold text_2">دسترسی سریع</span>
                                         <ul className="list-unstyled small m-0">
                                             <li className="py-1">
-                                                <Link to="/" className="footer_link_item">خانه</Link>
+                                                <Link to="/" className={styles.footer_link_item}>خانه</Link>
                                             </li>
                                             <li className="py-1">
-                                                <Link to="/clubs" className="footer_link_item">کانون‌ها</Link>
+                                                <Link to="/clubs" className={styles.footer_link_item}>کانون‌ها</Link>
                                             </li>
                                             <li className="py-1">
-                                                <Link to="/activities" className="footer_link_item">فعالیت‌ها</Link>
+                                                <Link to="/activities" className={styles.footer_link_item}>فعالیت‌ها</Link>
                                             </li>
                                             <li className="py-1">
-                                                <a href="#about_us" className="footer_link_item">گالری</a>
+                                                <a href="#about_us" className={styles.footer_link_item}>گالری</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -47,13 +48,13 @@ export default function Footer() {
                                     <div className="footer_links">
                                         <span className="d-block pb-2 fw-semibold text_2">تماس با ما</span>
                                         <ul className="list-unstyled small">
-                                            <li className="py-1 footer_contact">
+                                            <li className={`py-1 ${styles.footer_contact}`}>
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-map-pin preview-icon"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /><circle cx="12" cy="10" r="3" /></svg>                                                <span href="#">قم، دانشگاه آزاد اسلامی واحد پردیسان</span>
                                             </li>
-                                            <li className="py-1 footer_contact">
+                                            <li className={`py-1 ${styles.footer_contact}`}>
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-phone preview-icon"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" /></svg>                                                <span href="#" className="ltr">025 32333444</span>
                                             </li>
-                                            <li className="py-1 footer_contact">
+                                            <li className={`py-1 ${styles.footer_contact}`}>
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-mail preview-icon"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" /><rect x="2" y="4" width="20" height="16" rx="2" /></svg>                                                <span className="ltr">test@fake.com</span>
                                             </li>
                                         </ul>
@@ -69,7 +70,7 @@ export default function Footer() {
                             <span className="d-block pb-3 fw-semibold text_2">ما را دنبال کنید</span>
                             <ul className="list-unstyled d-flex gap-3 justify-content-center align-items-center m-0">
                                 <li className="py-1">
-                                    <a href="" className="social_link_item" target="_blank">
+                                    <a href="" className={styles.social_link_item} target="_blank">
                                         <div>
                                             <svg className="footer_svg" height="25" viewBox="5.312 -.192 501.099 512.323"
                                                 width="25" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
@@ -80,7 +81,7 @@ export default function Footer() {
                                     </a>
                                 </li>
                                 <li className="py-1">
-                                    <a href="" className="social_link_item" target="_blank">
+                                    <a href="" className={styles.social_link_item} target="_blank">
                                         <div>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" className="bi bi-telegram" viewBox="0 0 16 16">
                                                 <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09" />
@@ -89,7 +90,7 @@ export default function Footer() {
                                     </a>
                                 </li>
                                 <li className="py-1">
-                                    <a href="" className="social_link_item"
+                                    <a href="" className={styles.social_link_item}
                                         target="_blank">
                                         <div>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" className="bi bi-instagram" viewBox="0 0 16 16">
@@ -103,21 +104,21 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className="row d-flex justify-content-between align-items-center pt-2 mt-4 g-1 footer_bottom">
+                <div className={`row d-flex justify-content-between align-items-center pt-2 mt-4 g-1 ${styles.footer_bottom}`}>
                     <span className="col-12 col-sm-6 small fw-lighter order-2 order-sm-1">
                         <span>طراحی و توسعه توسط </span>
-                        <a href="www.linkedin.com/in/hossein-mehrbakhsh" className="footer_author ps-1">Hossein Mehrbakhsh</a>
+                        <a href="www.linkedin.com/in/hossein-mehrbakhsh" className={`${styles.footer_author} ps-1`}>Hossein Mehrbakhsh</a>
                     </span>
                     <span className="col-12 col-sm-6 small fw-lighter order-1 order-sm-2 ltr">© 2026 Islamic Azad Univercity. All
                         rights reserved.</span>
                 </div>
             </div>
 
-            <div className="footer_background1 position-absolute end-0 top-0">
+            <div className={`${styles.footer_background1} position-absolute end-0 top-0`}>
                 <img src="assets/imgs/footer_background.webp" width="150px" alt="" />
             </div>
 
-            <div className="footer_background2 position-absolute start-0 top-0">
+            <div className={`${styles.footer_background2} position-absolute start-0 top-0`}>
                 <img src="assets/imgs/footer_background.webp" width="150px" alt="" />
             </div>
         </footer>

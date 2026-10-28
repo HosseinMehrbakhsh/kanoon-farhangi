@@ -11,6 +11,7 @@ export default function Home() {
         return (
             <Club
                 key={club.id}
+                id={club.id}
                 img={club.mainImg}
                 title={club.title}
                 miniAbout={club.miniAbout}
@@ -22,7 +23,9 @@ export default function Home() {
         let lastActivity = club.activities.at(-1)
         return (
             <Activity
-                key={club.id}
+                key={club.id+"."+lastActivity.id}
+                id={lastActivity.id}
+                clubId={club.id}
                 clubTitle={club.title}
                 img={lastActivity.mainImg}
                 title={lastActivity.title}

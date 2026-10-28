@@ -1,14 +1,16 @@
 import styles from "./Clubs-Activities.module.css"
-import ClabsData from "../data/clubs-data"
+import ClubsData from "../data/clubs-data"
 import Activity from "../components/activity"
 
 
 export default function Activities() {
 
-    const ActivitiesArr = ClabsData.map((ClubData) => ClubData.activities.map(activity => {
+    const ActivitiesArr = ClubsData.map((ClubData) => ClubData.activities.map(activity => {
         return (
             <Activity
                 key={`${ClubData.id} . ${activity.id}`}
+                id={activity.id}
+                clubId={ClubData.id}
                 img={activity.mainImg}
                 title={activity.title}
                 clubTitle={ClubData.title}

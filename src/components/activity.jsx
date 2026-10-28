@@ -4,8 +4,8 @@ import styles from "./Club-Activity.module.css"
 export default function Activity(props) {
 
     return (
-        <div className="col-12 col-sm-6 col-lg-3 mx-auto">
-            <Link to="/singleActivity" className={`${styles.card_item} h-100 rounded-3 shadow-sm d-flex flex-sm-column align-items-start`}>
+        <div className="col-12 col-sm-6 col-lg-3">
+            <Link to={`/singleActivity?id=${props.id}&clubId=${props.clubId}`} className={`${styles.card_item} h-100 rounded-3 shadow-sm d-flex flex-sm-column align-items-start`}>
                 <div className={`${styles.card_img_container} d-flex rounded-3 overflow-hidden`}>
                     <img src={props.img} className={styles.card_img} alt="" />
                 </div>

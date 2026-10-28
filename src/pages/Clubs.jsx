@@ -8,6 +8,7 @@ export default function Clubs() {
         return (
             <Club
                 key={ClubData.id}
+                id={ClubData.id}
                 img={ClubData.mainImg}
                 title={ClubData.title}
                 miniAbout={ClubData.miniAbout}

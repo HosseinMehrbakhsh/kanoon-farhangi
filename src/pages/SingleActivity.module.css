@@ -1,4 +1,3 @@
-
 .single_activity_btn {
     text-decoration: none;
     border: 0;
@@ -16,7 +15,7 @@
 }
 
 
-.activity_stat_icon_container{
+.activity_stat_icon_container {
     background-color: var(--secondary-color);
     height: 35px;
     width: 35px;
@@ -26,20 +25,43 @@
     justify-content: center;
 }
 
-.video_container{
+.video_container {
     width: 100%;
-    height: 500px;
-    background-color: gray;
+    height: auto;
+    /* background-color: gray; */
+}
+
+.h_iframe_aparat_embed_frame {
+    position: relative;
+    width: 70%;
+}
+
+.h_iframe_aparat_embed_frame .ratio {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.h_iframe_aparat_embed_frame iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 767.98px) {
+    .h_iframe_aparat_embed_frame {
+        width: 100%;
+    }
 }
 
 @media (max-width: 575.98px) {
     .stat_title {
         font-size: 14px;
     }
-}
 
-@media (max-width: 575.98px) {
-    .activity_head p{
+    .activity_head p {
         font-size: 13px;
     }
 }

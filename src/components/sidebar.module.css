@@ -5,6 +5,7 @@
     width: 100%;
     transform: translateX(100%);
     transition: transform 0.3s ease;
+    z-index: 1000;
 }
 
 .sidebar {
@@ -64,14 +65,14 @@
 }
 
 .nav_link_items a {
-  color: var(--secondary-color);
-  text-decoration: none;
-  transition-duration: 0.3s;
-  font-size: 18px;
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition-duration: 0.3s;
+    font-size: 18px;
 }
 
 .nav_link_items a:hover {
-  color: var(--primary-color2);
+    color: var(--primary-color2);
 }
 
 @media (max-width: 1199.98px) {

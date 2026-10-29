@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function sidebar(props) {
 
     return (
-        <div className={`${styles.sidebar_container} ${props.isOpen ? styles.open : ""} row d-block d-xl-none position-fixed top-0 start-0 z-3 m-0`}>
+        <div className={`${styles.sidebar_container} ${props.isOpen ? styles.open : ""} row d-block d-xl-none position-fixed top-0 start-0 m-0`}>
             <div className={`${styles.sidebar} col-10 col-sm-8 col-md-6 col-lg-4`}>
                 <div className="d-flex justify-content-between">
                     <div className="d-flex align-items-center gap-2">

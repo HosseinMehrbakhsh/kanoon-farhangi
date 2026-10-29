@@ -22,7 +22,7 @@ export default function SingleClub() {
             <section className={`${styles.activity_head} py-3 py-md-4 shadow-sm`}>
                 <div className="container">
                     <div className="d-flex justify-content-between align-items-center gap-4">
-                        <div className="fs-2">{activity.title}</div>
+                        <div className="fs-3">{activity.title}</div>
                         <Link to="/activities" className={`${styles.single_activity_btn} d-flex align-items-center gap-1`}>
                             <span>رفتن به فعالیت‌ها</span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-arrow-left preview-icon"><path d="m12 19-7-7 7-7" /><path d="M19 12H5" /></svg>

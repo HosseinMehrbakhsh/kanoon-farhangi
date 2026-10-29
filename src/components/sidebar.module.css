@@ -1,0 +1,107 @@
+.sidebar_container {
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(2px);
+    height: 100vh;
+    width: 100%;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+}
+
+.sidebar {
+    background-color: var(--primary-color);
+    height: 100%;
+    color: var(--secondary-color);
+}
+
+.open {
+    transform: translateX(0);
+}
+
+.logo_img {
+    width: 50px;
+}
+
+.search_input {
+    background-color: hsl(219, 89%, 25%);
+    border: 1px solid var(--primary-color);
+    height: 35px;
+    width: 100%;
+    border-radius: 15px;
+    padding: 10px;
+    color: var(--secondary-color);
+}
+
+.search_input:focus {
+    outline: 1px solid var(--primary-color);
+}
+
+.search_input::placeholder {
+    color: var(--secondary-color);
+    opacity: 0.65;
+}
+
+.search_btn {
+    background-color: hsl(219, 89%, 25%);
+    color: var(--secondary-color);
+    border-color: var(--primary-color);
+    border-right: transparent;
+    border-radius: 15px;
+    transition-duration: 0.3s;
+    font-size: 13px;
+}
+
+.search_btn:focus {
+    background-color: var(--secondary-color);
+    outline: 1px solid gray;
+    border: 1px solid var(--primary-color);
+    border-right: 0;
+}
+
+.search_btn:hover {
+    border-color: var(--primary-color);
+    background-color: var(--primary-color2);
+    color: var(--secondary-color);
+}
+
+.nav_link_items a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition-duration: 0.3s;
+    font-size: 18px;
+}
+
+.nav_link_items a:hover {
+    color: var(--primary-color2);
+}
+
+@media (max-width: 1199.98px) {
+    .search_input {
+        height: 40px;
+        border-radius: 15px;
+        padding: 10px;
+    }
+
+    .search_btn {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .search_input {
+        height: 35px;
+        font-size: 14px;
+    }
+
+    .search_btn {
+        font-size: 14px;
+    }
+
+    .nav_title {
+        font-size: 14px;
+    }
+
+    .logo_img {
+        width: 45px;
+    }
+}

@@ -5,6 +5,8 @@
 
 .menu_icon {
   color: var(--secondary-color);
+  border: 0;
+  background-color: transparent;
 }
 
 .nav_title {

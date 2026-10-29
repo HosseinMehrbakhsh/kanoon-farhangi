@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import styles from "./Header.module.css"
 import logo from "../assets/imgs/farhangi-logo.webp"
-export default function Header() {
+export default function Header(props) {
     return (
         <header>
             <nav className={styles.main_nav}>
@@ -9,9 +9,9 @@ export default function Header() {
                     <div className="row">
                         <div className="col-10 col-md-7 col-lg-8 col-xl-4 pe-xl-0 pe-auto">
                             <div className="d-flex align-items-center gap-1 gap-sm-3">
-                                <a href="#" className={`d-xl-none ${styles.menu_icon}`}>
+                                <button onClick={props.toggleSidebar} className={`d-xl-none ${styles.menu_icon}`}>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-text-align-justify preview-icon"><path d="M3 5h18" /><path d="M3 12h18" /><path d="M3 19h18" /></svg>
-                                </a>
+                                </button>
 
                                 <img src={logo} className={styles.logo_img} alt="Azad univercity logo" width="70px" />
                                 <div className={`d-flex flex-column ${styles.nav_title}`}>

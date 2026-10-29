@@ -1,3 +1,7 @@
+main{
+    color: var(--text-primary);
+}
+
 .single_activity_btn {
     text-decoration: none;
     border: 0;
@@ -59,9 +63,5 @@
 @media (max-width: 575.98px) {
     .stat_title {
         font-size: 14px;
-    }
-
-    .activity_head p {
-        font-size: 13px;
     }
 }

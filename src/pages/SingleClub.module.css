@@ -1,3 +1,6 @@
+main{
+    color: var(--text-primary);
+}
 
 .single_club_btn {
     text-decoration: none;

@@ -8,6 +8,7 @@
     transform: translate3d(0, -100%, 0);
     transition: transform ease 0.3s;
     z-index: 10;
+    font-size: 14px;
 }
 
 .scrolled {

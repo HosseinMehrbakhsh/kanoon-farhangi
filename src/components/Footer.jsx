@@ -36,15 +36,12 @@ export default function Footer() {
                                             <li className="py-1">
                                                 <Link to="/activities" className={styles.footer_link_item}>فعالیت‌ها</Link>
                                             </li>
-                                            <li className="py-1">
-                                                <a href="#about_us" className={styles.footer_link_item}>گالری</a>
-                                            </li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
 
-                            <div className="col-6 footer_links_col px-2">
+                            <div className="col-6 footer_links_col px-2" id="contact_us">
                                 <div className="d-flex justify-content-start justify-content-lg-center">
                                     <div className="footer_links">
                                         <span className="d-block pb-2 fw-semibold text_2">تماس با ما</span>

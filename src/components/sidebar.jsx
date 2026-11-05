@@ -1,6 +1,7 @@
 import styles from "./sidebar.module.css";
 import logo from "../assets/imgs/farhangi-logo.webp"
 import { Link } from "react-router-dom";
+import ClubSearch from "./ClubSearch";
 
 export default function sidebar(props) {
 
@@ -20,12 +21,12 @@ export default function sidebar(props) {
 
 
                 <div className="col-11 py-2">
-                    <form className="search_box input-group d-flex justify-content-center flex-nowrap">
-                        <input type="search" className={`${styles.search_input} shadow`} placeholder="جستجو.." />
-                        <button type="submit" className={`btn ${styles.search_btn} shadow`}>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-search preview-icon"><path d="m21 21-4.34-4.34" /><circle cx="11" cy="11" r="8" /></svg>
-                        </button>
-                    </form>
+                    <ClubSearch
+                        formClassName="search_box input-group d-flex justify-content-center flex-nowrap"
+                        inputClassName={`${styles.search_input} shadow`}
+                        buttonClassName={`btn ${styles.search_btn} shadow`}
+                        onSearchSubmitted={props.toggleSidebar}
+                    />
                 </div>
 
                 <div className="col-8 pt-4 ps-2">

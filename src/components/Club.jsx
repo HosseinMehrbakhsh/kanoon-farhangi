@@ -4,7 +4,7 @@ import styles from "./Club-Activity.module.css"
 export default function Club(props) {
 
     return (
-        <div className="col-12 col-sm-6 col-lg-3 mx-auto d-sm-flex">
+        <div className="col-12 col-sm-6 col-lg-3 d-sm-flex">
             <Link to={`/SingleClub?id=${props.id}`} className={`${styles.card_item} h-100 rounded-3 shadow-sm d-flex flex-sm-column align-items-center`}>
                 <div className={`${styles.card_img_container} d-flex rounded-3 overflow-hidden`}>
                     <img src={props.img} className={styles.card_img} alt="" />

@@ -150,12 +150,8 @@ export default function SingleClub() {
 
             <section className="club_gallary py-3 py-md-4">
                 <div className="container pb-3">
-                    <div className="d-flex justify-content-between pb-3">
+                    <div className="pb-3">
                         <span className="fs-3">گالری</span>
-                        <Link to="" className="d-flex align-items-center gap-1 text-decoration-none small">
-                            <span>مشاهده همه</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-arrow-left preview-icon"><path d="m12 19-7-7 7-7" /><path d="M19 12H5" /></svg>
-                        </Link>
                     </div>
 
                     <div className="row g-3 d-flex flex-nowrap overflow-x-auto">
